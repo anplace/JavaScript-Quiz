@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" type="text/css" href="assets/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+
+<div class="mainContent">
+  <div id="timer">Time: <span id="timer-count"></span></div>
+
+  <!-- Below division holds the quiz information coming from the JS. -->
+  <div id="quiz-container">
+    <!-- Below houses the questions on the final page. -->
+    <div id="question-container">
+    </div>
+    <!-- Below houses the possible answers. -->
+    <div id="answers-container">
+    </div>
+  </div>
+<!-- Button puts the timer into a faster and faster loop everytime you push it. I have removed it until I have time to correct it. -->
+<!-- <button onclick="restartGame()">Restart Game</button> -->
+<div id="score">Score: <span id="score-count">0</span></div>
+
+</div>
+
+<div id="initials-container">
+  <label for="initials">Enter Your Initials:</label>
+  <input type="text" id="initials" maxlength="3" />
+  <button onclick="submitScore()">Submit Score</button>
+</div>
+
+
+<script src="assets/script.js" defer></script>
+</body>
+</html>
